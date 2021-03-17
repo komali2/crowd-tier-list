@@ -9,6 +9,11 @@ export default new Vuex.Store({
   mutations: {
   },
   actions: {
+    async getUsers() {
+      const response = await fetch('api/');
+      const responseJson = await response.json();
+      console.log(responseJson);
+    },
   },
   modules: {
   },

@@ -14,5 +14,8 @@ export default {
   components: {
     HelloWorld,
   },
+  mounted() {
+    this.$store.dispatch('getUsers');
+  },
 };
 </script>
